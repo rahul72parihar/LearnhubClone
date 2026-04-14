@@ -81,13 +81,21 @@ const Groups = () => {
             ))}
           </div>
 
-          {/* <div className="badge support">
-            <div className="icon">💬</div> <div className="badgeText"><strong>24/7 Support</strong><span>Always here</span></div>
-          </div> */}
+          <div className="groups-badge groups-badge-support">
+            <div className="groups-badge-icon">💬</div>
+            <div className="groups-badge-text">
+              <strong>24/7 Support</strong>
+              <span>Always here</span>
+            </div>
+          </div>
 
-          {/* <div className="badge countries">
-            <div className="icon">🌍</div> <div className="badgeText"><strong>150+ Countries</strong><span>Worldwide reach</span></div>
-          </div> */}
+          <div className="groups-badge groups-badge-countries">
+            <div className="groups-badge-icon">🌍</div>
+            <div className="groups-badge-text">
+              <strong>150+ Countries</strong>
+              <span>Worldwide reach</span>
+            </div>
+          </div>
         </div>
 
       </div>

@@ -109,7 +109,7 @@
 /* ========================= */
 /* BADGES */
 /* ========================= */
-.groups-right .badge {
+.groups-badge {
   position: absolute;
   color: black;
   height: auto;
@@ -121,33 +121,42 @@
   gap: 10px;
   align-items: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 2;
 }
 
-.groups-right .badge .icon {
+.groups-badge-icon {
   width: 30px;
   height: 30px;
   font-size: 20px;
+  background: #dcfce7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #22c55e;
 }
 
-.groups-right .badge strong {
+.groups-badge strong {
   font-size: 14px;
 }
 
-.groups-right .badge .badgeText {
+.groups-badge-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: 12px;
 }
 
-.support {
-  top: -20px;
-  left: 0px;
+.groups-badge-support {
+  top: 12px;
+  left: 12px;
 }
 
-.countries {
-  top: 90%;
-  left: 90%;
+.groups-badge-countries {
+  top: auto;
+  left: auto;
+  right: 12px;
+  bottom: 12px;
 }
 
 /* ========================= */
@@ -192,7 +201,7 @@
 /* MOBILE */
 @media (max-width: 600px) {
   .groups {
-    padding: 40px 15px;
+    padding: 40px 22px;
   }
 
   .groups-left h2 {
@@ -209,27 +218,42 @@
   }
 
   .groups-right {
-    padding: 15px;
+    padding: 28px 14px 44px;
   }
 
-  .groups-right .badge {
-    font-size: 12px;
+  .groups-badge {
+    max-width: calc(100% - 28px);
+    font-size: 11px;
     padding: 6px 10px;
+    border-radius: 16px;
+    gap: 8px;
   }
 
-  .groups-right .badge .icon {
+  .groups-badge-icon {
     width: 20px;
     height: 20px;
     font-size: 16px;
+    flex-shrink: 0;
   }
 
-  .support {
-    top: -10px;
-    left: 10px;
+  .groups-badge strong {
+    font-size: 12px;
   }
 
-  .countries {
-    top: 95%;
-    right: 20px;
+  .groups-badge-text {
+    font-size: 11px;
+    line-height: 1.3;
+  }
+
+  .groups-badge-support {
+    top: 12px;
+    left: 12px;
+  }
+
+  .groups-badge-countries {
+    top: auto;
+    bottom: 12px;
+    right: 12px;
+    left: auto;
   }
 }
