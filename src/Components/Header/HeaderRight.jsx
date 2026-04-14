@@ -1,7 +1,7 @@
-export default function HeaderRight({ openForm }) {
+export default function HeaderRight({ openForm, mobile = false }) {
   return (
-    <div>
-      <button onClick={openForm} className="headerRightButton">
+    <div className={mobile ? "mobileHeaderRight" : ""}>
+      <button onClick={openForm} className="headerRightButton" type="button">
         Get Started
       </button>
     </div>

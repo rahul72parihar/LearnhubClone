@@ -1,4 +1,4 @@
-export default function HeaderCenter() {
+export default function HeaderCenter({ mobile = false, onItemClick }) {
   const links = [
     { name: "Home", id: "home" },
     { name: "Courses", id: "courses" },
@@ -12,11 +12,12 @@ export default function HeaderCenter() {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
+      onItemClick?.();
     }
   };
 
   return (
-    <div className="headerCenter">
+    <div className={mobile ? "headerCenter mobileHeaderCenter" : "headerCenter"}>
       {links.map((item, index) => (
         <span
           key={index}
