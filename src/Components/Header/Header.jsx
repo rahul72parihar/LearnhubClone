@@ -30,7 +30,11 @@ export default function Header() {
           aria-expanded={mobileMenuOpen}
           onClick={() => setMobileMenuOpen((open) => !open)}
         >
-          {mobileMenuOpen ? "✕" : "☰"}
+          <span className={`mobileMenuIcon${mobileMenuOpen ? " isOpen" : ""}`}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
         </button>
       </div>
 

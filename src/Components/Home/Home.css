@@ -5,7 +5,8 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  min-height: calc(100vh - 72px);
+  flex :1 1 100%;
+  /* min-height: calc(100vh - 55px); */
   background: radial-gradient(
     circle at 50% 50%,
     rgba(234, 240, 237, 0.2) 0%,
@@ -14,14 +15,16 @@
     white 100%
   );
   position: relative;
-  padding-top: 72px;
-  padding-bottom: 32px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   margin-bottom: 0;
 }
-
-.homeLeft {
-  flex: 1 1 500px;
+.home > div {
+  flex: 1 1 0; 
+  min-width: 500px;
 }
+
+
 
 @media (max-width: 480px) {
   .mainHeading h1 {
@@ -32,36 +35,39 @@
     font-size: 14px;
   }
 
-  .badge {
-    font-size: 12px;
-    padding: 8px 12px;
-  }
 }
 
 .homeLeft {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
   padding: 60px 40px;
   flex: 1 1 480px;
   gap: 20px;
 }
 
-.badge {
+.homeAnnouncementBadge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  border: 2px solid #22c55e;
-  border-radius: 50px;
-  padding: 10px 20px;
-  width: fit-content;
-  color: #22c55e;
-  font-weight: 500;
-  font-size: 14px;
+  width: 196px;
+  min-height: 40px;
+  padding: 12px 16px;
+  border: 1px solid #09c82c;
+  border-radius: 999px;
+  background-color: #09c82c1a;
+  color: #09c82c;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1;
+  box-shadow: none;
 }
 
-.badgeDot {
-  font-size: 20px;
+.homeAnnouncementDot {
+  font-size: 14px;
+  line-height: 1;
 }
 
 .mainHeading {
@@ -131,26 +137,37 @@
 
 .statsContainer {
   display: flex;
-  gap: 50px;
-  flex-wrap: wrap;
+  gap:5px;justify-content: flex-start;
+  /* flex-wrap: wrap; */
   margin-top: 40px;
 }
 
 .statItem {
   display: flex;
   align-items: center;
-  gap: 12px;
-  min-width: 160px;
+  gap: 5px;
+  width: min-content;
+
 }
 
 .statIcon {
-  font-size: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  color: #22c55e;
+}
+
+.statIcon svg {
+  width: 100%;
+  height: 100%;
 }
 
 .statText {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
-  color: #333;
+  color: #4b5563;
 }
 
 .homeRight {
@@ -210,73 +227,88 @@
 
 .topRightBadge,
 .bottomLeftBadge {
-  border: 1px solid rgba(34, 197, 94, 0.25);
-  box-shadow: 0 8px 20px rgba(34, 197, 94, 0.08);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
 }
 
 /* TOP RIGHT BADGE  */
 
 .topRightBadge {
   display: flex;
-  justify-content: center;
   align-items: center;
+  gap: 10px;
   background-color: white;
-  border-radius: 15px;
-  padding: 10px 10px;
+  border-radius: 999px;
+  padding: 10px 14px;
   position: absolute;
-  top: -10px;
-  right: -10px;
-  flex-direction: row;
+  top: -16px;
+  right: -16px;
+  max-width: 320px;
 }
+
 .badgeLabelBold {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
-  color: #333;
+  line-height: 1.05;
+  color: #4b5563;
 }
+
 .profilePics {
   display: flex;
-  gap: -8px;
+  align-items: center;
 }
 
 .pic {
-  display: inline-flex;
-  width: 32px;
-  height: 32px;
-  background-color: #ddd;
+  width: 20px !important;
+  height: 20px !important;
+  object-fit: cover;
   border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  margin-right: -8px;
+  margin-right: -6px;
   border: 2px solid white;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.12);
 }
 
 .badgeLabel {
   margin: 0;
   font-size: 12px;
-  font-weight: 300;
-  color: #333;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #4b5563;
+}
+
+.badgeTextGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
 /* BOTTOM LEFT BADGE  */
 
 .bottomLeftBadge {
   position: absolute;
-  bottom: -20px;
-  left: -20px;
+  bottom: -18px;
+  left: -18px;
   background-color: white;
   padding: 5px 10px;
-  border-radius: 15px;
+  border-radius: 999px;
   display: flex;
   align-items: center;
-  flex-direction: row;
-}
-.bottomLeftBadge div {
-  display: flex;
-  flex-direction: column;
 }
 
 .badgeIcon {
-  font-size: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: rgba(34, 197, 94, 0.12);
+  color: #22c55e;
+}
+
+.badgeIcon svg {
+  width: 20px;
+  height: 20px;
 }
 
 .downButton {
@@ -337,6 +369,8 @@
     min-height: auto;
     padding-top: 96px;
     margin-bottom: 8vh;
+    background: none;
+    background-color: white !important;
   }
 
   .homeLeft,
@@ -349,8 +383,8 @@
   }
 
   .homeLeft {
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
   }
 
   .description {
@@ -397,6 +431,7 @@
   .home {
     padding-top: 88px;
     margin-bottom: 6vh;
+    background-color: white !important;
   }
 
   .homeLeft,
@@ -409,8 +444,8 @@
   }
 
   .buttonGroup {
-    flex-direction: column;
-    align-items: stretch;
+    flex-direction: row;
+    align-items: flex-start;
   }
 
   .btnPrimary,
@@ -420,17 +455,19 @@
   }
 
   .topRightBadge {
-    top: 12px;
-    right: 12px;
+    top: 10px;
+    right: 10px;
     max-width: calc(100% - 24px);
+    padding: 8px 12px;
+    gap: 8px;
   }
 
   .bottomLeftBadge {
-    left: 12px;
-    bottom: 12px;
+    left: 10px;
+    bottom: 10px;
     max-width: calc(100% - 24px);
-    padding: 8px 10px;
-    padding-right: 10px;
+    padding: 10px 14px;
+    gap: 10px;
   }
 
   .mainHeading h1 {
@@ -443,9 +480,7 @@
   }
 
   .statItem {
-    width: 100%;
     justify-content: center;
-    min-width: 0;
   }
 
   .playButton {
@@ -459,6 +494,9 @@
     height: 32%;
   }
 }
+  .homeAnnouncementBadge {
+    font-size: 14px !important;
+  }
 
 @media (max-width: 480px) {
   .homeLeft,
@@ -474,10 +512,12 @@
     font-size: 14px;
   }
 
-  .badge {
-    width: 100%;
+
+  .homeAnnouncementBadge {
+    width: 195px;
     justify-content: center;
     text-align: center;
+    align-self: flex-start;
     font-size: 12px;
     padding: 8px 12px;
   }
@@ -488,12 +528,27 @@
   }
 
   .badgeIcon {
-    font-size: 20px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .badgeIcon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .badgeLabelBold {
+    font-size: 13px;
+  }
+
+  .badgeLabel {
+    font-size: 12px;
   }
 
   .pic {
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
+    margin-right: -5px;
   }
 }
 .closeButton {

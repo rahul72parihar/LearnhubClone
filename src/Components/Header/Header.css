@@ -3,7 +3,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 20px;
+  height: 55px;
+  padding: 0 18px;
   background-color: white;
   position: fixed;
   top: 0;
@@ -31,8 +32,9 @@
 }
 
 .headerRightButton {
+  color:white;
   padding: 10px 20px;
-  background-color: rgb(98, 210, 120);
+  background-color: #09c82c;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   cursor: pointer;
@@ -42,14 +44,44 @@
 
 .mobileMenuButton {
   display: none;
-  width: 42px;
-  height: 42px;
-  border: none;
-  border-radius: 12px;
-  background-color: rgb(240, 253, 244);
-  color: rgb(34, 197, 94);
-  font-size: 22px;
+  width: 55px;
+  height: 39.2px;
+  padding: 0 10px;
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  border-radius: 18px;
+  background-color: white;
   cursor: pointer;
+  appearance: none;
+}
+
+.mobileMenuIcon {
+  position: relative;
+  width: 26px;
+  height: 18px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mobileMenuIcon span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 999px;
+  background-color: #9aa1ad;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.mobileMenuIcon.isOpen span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.mobileMenuIcon.isOpen span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobileMenuIcon.isOpen span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 .mobileNavPanel {
@@ -58,7 +90,8 @@
 
 @media (max-width: 768px) {
   .header {
-    padding: 16px;
+    height: 55px;
+    padding: 0 14px;
     gap: 12px;
   }
 
@@ -80,7 +113,7 @@
   .mobileNavPanel {
     display: flex;
     position: fixed;
-    top: 76px;
+    top: 63px;
     left: 16px;
     right: 16px;
     z-index: 999;

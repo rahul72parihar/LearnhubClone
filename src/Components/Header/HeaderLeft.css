@@ -3,13 +3,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 6px;
 }
 
 .headerIcon{
     border-radius: 50%;
-    padding: 8px;
-    background-color: rgb(180, 253, 180);
 }
 
 .headerIcon svg{
@@ -26,6 +24,6 @@
     }
 
     .headerIcon {
-        padding: 8px;
+        padding: 0;
     }
 }
