@@ -1,497 +1,506 @@
 .home {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background: radial-gradient(circle at 50% 50%, rgba(234, 240, 237, 0.2) 0%, rgba(34, 197, 94, 0.1) 25%, rgba(34, 197, 94, 0.05) 50%, white 100%);
-    position: relative;
-    padding-top: 10vh;
-    margin-bottom: 10vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(234, 240, 237, 0.2) 0%,
+    rgba(34, 197, 94, 0.1) 25%,
+    rgba(34, 197, 94, 0.05) 50%,
+    white 100%
+  );
+  position: relative;
+  padding-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 .homeLeft {
-    flex: 1 1 500px;
+  flex: 1 1 500px;
 }
 
 @media (max-width: 480px) {
-    .mainHeading h1 {
-        font-size: 24px;
-    }
+  .mainHeading h1 {
+    font-size: 24px;
+  }
 
-    .description {
-        font-size: 14px;
-    }
+  .description {
+    font-size: 14px;
+  }
 
-    .badge {
-        font-size: 12px;
-        padding: 8px 12px;
-    }
+  .badge {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
 }
 
 .homeLeft {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 60px 40px;
-    flex: 1 1 480px;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 60px 40px;
+  flex: 1 1 480px;
+  gap: 20px;
 }
 
 .badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    border: 2px solid #22c55e;
-    border-radius: 50px;
-    padding: 10px 20px;
-    width: fit-content;
-    color: #22c55e;
-    font-weight: 500;
-    font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid #22c55e;
+  border-radius: 50px;
+  padding: 10px 20px;
+  width: fit-content;
+  color: #22c55e;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .badgeDot {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .mainHeading {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 .mainHeading h1 {
-    font-size: 48px;
-    font-weight: 800;
-    margin: 0;
-    line-height: 1.1;
-    color: #000;
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.1;
+  color: #000;
 }
 
 .highlightText {
-    color: #22c55e !important;
+  color: #22c55e !important;
 }
 
 .description {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #555;
-    margin: 10px 0;
-    max-width: 500px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin: 10px 0;
+  max-width: 500px;
 }
 
 .buttonGroup {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
 }
 
 .btnPrimary {
-    background-color: #22c55e;
-    color: white;
-    border: none;
-    padding: 15px 35px;
-    border-radius: 50px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .btnPrimary:hover {
-    background-color: #16a34a;
+  background-color: #16a34a;
 }
 
 .btnSecondary {
-    background-color: #f0f0f0;
-    color: #333;
-    border: none;
-    padding: 15px 35px;
-    border-radius: 50px;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .btnSecondary:hover {
-    background-color: #e0e0e0;
+  background-color: #e0e0e0;
 }
 
 .statsContainer {
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-    margin-top: 40px;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 .statItem {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    min-width: 160px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 160px;
 }
 
 .statIcon {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .statText {
-    font-size: 15px;
-    font-weight: 600;
-    color: #333;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
 }
 
 .homeRight {
-    flex: 1 1 420px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 40px;
-    min-width: 300px;
+  flex: 1 1 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  min-width: 300px;
 }
 
 /* HERO IMAGE AND PLAY BUTTON */
 
 .heroImage {
-    position: relative;
-    background-color: white;
-    width: 100%;
-    padding: 10px;
-    height: auto;
-    max-width: 500px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  position: relative;
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+  height: auto;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .heroImage img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .playButton {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: #22c55e;
-    border: none;
-    color: white;
-    font-size: 32px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 5px 20px rgba(34, 197, 94, 0.4);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #22c55e;
+  border: none;
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+  box-shadow: 0 5px 20px rgba(34, 197, 94, 0.4);
 }
 
 .playButton:hover {
-    transform: translate(-50%, -50%) scale(1.1);
-    box-shadow: 0 8px 25px rgba(34, 197, 94, 0.6);
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 8px 25px rgba(34, 197, 94, 0.6);
 }
 
-
-
+.topRightBadge,
+.bottomLeftBadge {
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  box-shadow: 0 8px 20px rgba(34, 197, 94, 0.08);
+}
 
 /* TOP RIGHT BADGE  */
 
 .topRightBadge {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-radius: 15px;
-    padding: 10px 10px;
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px 10px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  flex-direction: row;
 }
-.badgeLabelBold{
-    font-size: 12px;
-    font-weight: 700;
-    color: #333;
+.badgeLabelBold {
+  font-size: 12px;
+  font-weight: 700;
+  color: #333;
 }
 .profilePics {
-    display: flex;
-    gap: -8px;
+  display: flex;
+  gap: -8px;
 }
 
 .pic {
-    display: inline-flex;
-    width: 32px;
-    height: 32px;
-    background-color: #ddd;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    margin-right: -8px;
-    border: 2px solid white;
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  background-color: #ddd;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-right: -8px;
+  border: 2px solid white;
 }
 
 .badgeLabel {
-    margin: 0;
-    font-size: 12px;
-    font-weight: 300;
-    color: #333;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 300;
+  color: #333;
 }
-
 
 /* BOTTOM LEFT BADGE  */
 
 .bottomLeftBadge {
-    position: absolute;
-    bottom: -20px;
-    left: -20px;
-    background-color: white;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
-.bottomLeftBadge div{
-    display: flex;
-    flex-direction: column;
+.bottomLeftBadge div {
+  display: flex;
+  flex-direction: column;
 }
 
 .badgeIcon {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .downButton {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: #000;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .downButton:hover {
-    background-color: #333;
+  background-color: #333;
 }
-
 
 .homeRight {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .homeRight img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}   
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 
 @media screen and (max-width: 1100px) {
-    .home {
-        padding-top: 12vh;
-    }
+  .home {
+    padding-top: 12vh;
+  }
 
-    .homeLeft,
-    .homeRight {
-        padding: 48px 24px;
-    }
+  .homeLeft,
+  .homeRight {
+    padding: 48px 24px;
+  }
 
-    .mainHeading h1 {
-        font-size: 42px;
-    }
+  .mainHeading h1 {
+    font-size: 42px;
+  }
 
-    .statsContainer {
-        gap: 24px;
-    }
+  .statsContainer {
+    gap: 24px;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .home {
-        flex-direction: column;
-        align-items: stretch;
-        padding-top: 96px;
-        margin-bottom: 8vh;
-    }
+  .home {
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 96px;
+    margin-bottom: 8vh;
+  }
 
-    .homeLeft,
-    .homeRight {
-        flex: 1 1 auto;
-        width: 100%;
-        max-width: 680px;
-        margin: 0 auto;
-        padding: 40px 20px;
-    }
+  .homeLeft,
+  .homeRight {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
 
-    .homeLeft {
-        align-items: center;
-        text-align: center;
-    }
+  .homeLeft {
+    align-items: center;
+    text-align: center;
+  }
 
-    .description {
-        max-width: 100%;
-    }
+  .description {
+    max-width: 100%;
+  }
 
-    .buttonGroup {
-        width: 100%;
-        justify-content: center;
-    }
+  .buttonGroup {
+    width: 100%;
+    justify-content: center;
+  }
 
-    .statsContainer {
-        justify-content: center;
-    }
+  .statsContainer {
+    justify-content: center;
+  }
 
-    .homeRight {
-        min-width: 0;
-    }
+  .homeRight {
+    min-width: 0;
+  }
 
-    .heroImage {
-        max-width: 100%;
-    }
+  .heroImage {
+    max-width: 100%;
+  }
 }
-
 
 /* VIDEO PLAYER */
 .videoPlayer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
 }
 
-.videoPlayer iframe{
-    width: 80%;
-    height: 80%;
+.videoPlayer iframe {
+  width: 80%;
+  height: 80%;
 }
 @media screen and (max-width: 768px) {
-    .home {
-        padding-top: 88px;
-        margin-bottom: 6vh;
-    }
+  .home {
+    padding-top: 88px;
+    margin-bottom: 6vh;
+  }
 
-    .homeLeft,
-    .homeRight {
-        padding: 32px 16px;
-    }
+  .homeLeft,
+  .homeRight {
+    padding: 32px 16px;
+  }
 
-    .homeRight {
-        min-width: 0;
-    }
+  .homeRight {
+    min-width: 0;
+  }
 
-    .buttonGroup {
-        flex-direction: column;
-        align-items: stretch;
-    }
+  .buttonGroup {
+    flex-direction: column;
+    align-items: stretch;
+  }
 
-    .btnPrimary,
-    .btnSecondary {
-        width: 100%;
-        padding: 14px 20px;
-    }
+  .btnPrimary,
+  .btnSecondary {
+    width: 100%;
+    padding: 14px 20px;
+  }
 
-    .topRightBadge {
-        top: 12px;
-        right: 12px;
-        max-width: calc(100% - 24px);
-    }
+  .topRightBadge {
+    top: 12px;
+    right: 12px;
+    max-width: calc(100% - 24px);
+  }
 
-    .bottomLeftBadge {
-        left: 12px;
-        bottom: 12px;
-        max-width: calc(100% - 24px);
-        padding: 8px 10px;
-        padding-right: 10px;
-    }
+  .bottomLeftBadge {
+    left: 12px;
+    bottom: 12px;
+    max-width: calc(100% - 24px);
+    padding: 8px 10px;
+    padding-right: 10px;
+  }
 
-    .mainHeading h1 {
-        font-size: 34px;
-    }
+  .mainHeading h1 {
+    font-size: 34px;
+  }
 
-    .statsContainer {
-        width: 100%;
-        gap: 16px;
-    }
+  .statsContainer {
+    width: 100%;
+    gap: 16px;
+  }
 
-    .statItem {
-        width: 100%;
-        justify-content: center;
-        min-width: 0;
-    }
+  .statItem {
+    width: 100%;
+    justify-content: center;
+    min-width: 0;
+  }
 
-    .playButton {
-        width: 64px;
-        height: 64px;
-        font-size: 26px;
-    }
+  .playButton {
+    width: 64px;
+    height: 64px;
+    font-size: 26px;
+  }
 
-    .videoPlayer iframe{
-        width: 88%;
-        height: 32%;
-    }
+  .videoPlayer iframe {
+    width: 88%;
+    height: 32%;
+  }
 }
 
 @media (max-width: 480px) {
-    .homeLeft,
-    .homeRight {
-        padding: 28px 16px;
-    }
+  .homeLeft,
+  .homeRight {
+    padding: 28px 16px;
+  }
 
-    .mainHeading h1 {
-        font-size: 28px;
-    }
+  .mainHeading h1 {
+    font-size: 28px;
+  }
 
-    .description {
-        font-size: 14px;
-    }
+  .description {
+    font-size: 14px;
+  }
 
-    .badge {
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-        font-size: 12px;
-        padding: 8px 12px;
-    }
+  .badge {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    padding: 8px 12px;
+  }
 
-    .topRightBadge,
-    .bottomLeftBadge {
-        gap: 8px;
-    }
+  .topRightBadge,
+  .bottomLeftBadge {
+    gap: 8px;
+  }
 
-    .badgeIcon {
-        font-size: 20px;
-    }
+  .badgeIcon {
+    font-size: 20px;
+  }
 
-    .pic {
-        width: 28px;
-        height: 28px;
-    }
+  .pic {
+    width: 28px;
+    height: 28px;
+  }
 }
 .closeButton {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: #ff4d4d;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 50%;
-    font-size: 18px;
-    cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
 }
