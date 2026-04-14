@@ -1,5 +1,5 @@
 import React from "react";
-import "./mentors.css";
+import "./Mentors.css";
 
 const MentorCard = ({ mentor }) => {
   return (
