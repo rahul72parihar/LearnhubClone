@@ -3,6 +3,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     background: radial-gradient(circle at 50% 50%, rgba(234, 240, 237, 0.2) 0%, rgba(34, 197, 94, 0.1) 25%, rgba(34, 197, 94, 0.05) 50%, white 100%);
     position: relative;
@@ -34,7 +35,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 60px 40px;
-    flex: 1;
+    flex: 1 1 480px;
     gap: 20px;
 }
 
@@ -83,6 +84,7 @@
 
 .buttonGroup {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     margin-top: 20px;
 }
@@ -130,6 +132,7 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    min-width: 160px;
 }
 
 .statIcon {
@@ -143,7 +146,7 @@
 }
 
 .homeRight {
-    flex: 1;
+    flex: 1 1 420px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -295,6 +298,69 @@
     border-radius: 10px;
 }   
 
+@media screen and (max-width: 1100px) {
+    .home {
+        padding-top: 12vh;
+    }
+
+    .homeLeft,
+    .homeRight {
+        padding: 48px 24px;
+    }
+
+    .mainHeading h1 {
+        font-size: 42px;
+    }
+
+    .statsContainer {
+        gap: 24px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .home {
+        flex-direction: column;
+        align-items: stretch;
+        padding-top: 96px;
+        margin-bottom: 8vh;
+    }
+
+    .homeLeft,
+    .homeRight {
+        flex: 1 1 auto;
+        width: 100%;
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    .homeLeft {
+        align-items: center;
+        text-align: center;
+    }
+
+    .description {
+        max-width: 100%;
+    }
+
+    .buttonGroup {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .statsContainer {
+        justify-content: center;
+    }
+
+    .homeRight {
+        min-width: 0;
+    }
+
+    .heroImage {
+        max-width: 100%;
+    }
+}
+
 
 /* VIDEO PLAYER */
 .videoPlayer {
@@ -316,6 +382,7 @@
 }
 @media screen and (max-width: 768px) {
     .home {
+        padding-top: 88px;
         margin-bottom: 6vh;
     }
 
@@ -330,11 +397,13 @@
 
     .buttonGroup {
         flex-direction: column;
+        align-items: stretch;
     }
 
     .btnPrimary,
     .btnSecondary {
         width: 100%;
+        padding: 14px 20px;
     }
 
     .topRightBadge {
@@ -347,12 +416,71 @@
         left: 12px;
         bottom: 12px;
         max-width: calc(100% - 24px);
+        padding: 8px 10px;
         padding-right: 10px;
     }
 
+    .mainHeading h1 {
+        font-size: 34px;
+    }
+
+    .statsContainer {
+        width: 100%;
+        gap: 16px;
+    }
+
+    .statItem {
+        width: 100%;
+        justify-content: center;
+        min-width: 0;
+    }
+
+    .playButton {
+        width: 64px;
+        height: 64px;
+        font-size: 26px;
+    }
+
     .videoPlayer iframe{
-        width: 50%;
-        height: 30%;
+        width: 88%;
+        height: 32%;
+    }
+}
+
+@media (max-width: 480px) {
+    .homeLeft,
+    .homeRight {
+        padding: 28px 16px;
+    }
+
+    .mainHeading h1 {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .badge {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .topRightBadge,
+    .bottomLeftBadge {
+        gap: 8px;
+    }
+
+    .badgeIcon {
+        font-size: 20px;
+    }
+
+    .pic {
+        width: 28px;
+        height: 28px;
     }
 }
 .closeButton {

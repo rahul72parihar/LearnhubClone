@@ -128,7 +128,23 @@
 }
 
 @media (max-width: 600px) {
+  .mentors-section {
+    padding: 48px 16px;
+  }
+
   .mentor-grid {
     grid-template-columns: 1fr;
+    padding: 20px 0;
+    gap: 20px;
+  }
+
+  .mentor-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .mentors-section {
+    padding: 40px 12px;
   }
 }

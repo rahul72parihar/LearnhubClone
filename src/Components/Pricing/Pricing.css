@@ -117,7 +117,21 @@
 
 /* Responsive */
 @media (max-width: 1100px) {
+  .pricing-section {
+    padding: 60px 20px;
+  }
+
   .pricing-grid {
     grid-template-columns: 1fr;
+  }
+
+  .pricing-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-section {
+    padding: 40px 12px;
   }
 }

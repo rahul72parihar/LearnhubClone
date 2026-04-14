@@ -205,11 +205,27 @@
 
 @media (max-width: 720px) {
   .coursesSection {
-    padding: 60px 60px;
-    width: 90vw;
+    width: 100%;
+    padding: 48px 16px;
   }
 
   .coursesGrid {
     grid-template-columns: 1fr;
+  }
+
+  .courseCard {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .coursesSection {
+    padding: 40px 12px;
+  }
+
+  .courseContent,
+  .courseFooter {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
