@@ -2,7 +2,7 @@
 /* BASE */
 /* ========================= */
 .groups {
-  padding: 80px 60px;
+  padding: 40px 30px;
   background: radial-gradient(circle at 50% 50%, rgba(234, 240, 237, 0.2) 0%, rgba(34, 197, 94, 0.1) 25%, rgba(34, 197, 94, 0.05) 50%, white 100%);
   font-family: Arial, sans-serif;
 }
@@ -84,24 +84,25 @@
   justify-content: center;
   background-color: white;
   border-radius: 25px;
+  aspect-ratio: 1/1;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
   align-items: center;
   position: relative;
   overflow: visible;
-  padding: 30px;
+  padding: 20px;
 }
 
 .avatar-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: 10px;
+  width: 100%;
 }
 
 .avatar-grid img {
   width: 100%;
-  max-width: 120px;
+  /* max-width: 120px; */
   aspect-ratio: 1/1;
-  height: auto;
   border-radius: 50%;
   border: 4px solid #e5e7eb;
 }
@@ -148,15 +149,15 @@
 }
 
 .groups-badge-support {
-  top: 12px;
-  left: 12px;
+  top: -12px;
+  left: -12px;
 }
 
 .groups-badge-countries {
   top: auto;
   left: auto;
-  right: 12px;
-  bottom: 12px;
+  right: -12px;
+  bottom: -12px;
 }
 
 /* ========================= */
@@ -167,6 +168,7 @@
 @media (max-width: 1200px) {
   .groups {
     padding: 60px 30px;
+    background: none;
   }
 
   .groups-left h2 {
