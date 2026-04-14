@@ -1,0 +1,102 @@
+.testimonials-section {
+  padding: 80px 60px;
+  text-align: center;
+  background: #f9fafb;
+  font-family: Arial, sans-serif;
+}
+
+.testimonials-section h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 50px;
+}
+
+/* Grid */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Card */
+.testimonial-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Stars */
+.stars {
+  color: #facc15;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Quote */
+.quote {
+  font-size: 30px;
+  color: #22c55e;
+  margin-bottom: 10px;
+}
+
+/* Message */
+.message {
+  color: #444;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: #eee;
+  margin: 20px 0;
+}
+
+/* User */
+.user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user h4 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.user p {
+  margin: 0;
+  font-size: 13px;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}

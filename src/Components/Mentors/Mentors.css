@@ -1,0 +1,134 @@
+/* Section */
+.mentors-section {
+  padding: 80px 60px;
+  text-align: center;
+  background: #f9fafb;
+  font-family: Arial, sans-serif;
+}
+
+.tag {
+  color: #22c55e;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.mentors-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.mentors-section h2 span {
+  color: #22c55e;
+}
+
+.subtitle {
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+
+/* Grid */
+.mentor-grid {
+  display: grid;
+  padding: 20px 10px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* Card */
+.mentor-card {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  background: white;
+  padding: 40px 20px !important;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.mentor-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image */
+.mentor-img-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.mentor-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 4px solid #facc15;
+}
+
+/* Rating */
+.rating-badge {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #facc15;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Text */
+.role {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Social */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socials span {
+  width: 30px;
+  height: 30px;
+  background: #eee;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .mentor-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .mentor-grid {
+    grid-template-columns: 1fr;
+  }
+}

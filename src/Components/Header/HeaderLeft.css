@@ -1,0 +1,21 @@
+.headerLeft {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.headerIcon{
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgb(180, 253, 180);
+}
+
+.headerIcon svg{
+    background-color: transparent;
+}
+.headerLeftHeading {
+    font-size: 24px;
+    font-weight: bold;
+}

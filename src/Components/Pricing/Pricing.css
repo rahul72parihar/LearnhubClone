@@ -1,0 +1,123 @@
+.pricing-section {
+  padding: 80px 100px;
+  text-align: center;
+  background: #f9fafb;
+  font-family: Arial, sans-serif;
+}
+
+.tag {
+  color: #22c55e;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.pricing-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.pricing-section h2 span {
+  color: #22c55e;
+}
+
+.subtitle-main {
+  color: #666;
+  margin-bottom: 50px;
+}
+
+/* Grid */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Card */
+.pricing-card {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 40px 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  position: relative;
+  transition: 0.3s;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Popular */
+.popular {
+  border: 2px solid #22c55e;
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #22c55e;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+/* Price */
+.price {
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+.price span {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Features */
+.features {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.features li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: #e5e7eb;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn.primary {
+  background: #22c55e;
+  color: white;
+}
+
+/* Bottom */
+.bottom-note {
+  margin-top: 40px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+}

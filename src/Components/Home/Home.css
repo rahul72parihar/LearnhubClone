@@ -1,0 +1,334 @@
+.home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(234, 240, 237, 0.2) 0%, rgba(34, 197, 94, 0.1) 25%, rgba(34, 197, 94, 0.05) 50%, white 100%);
+    position: relative;
+    padding-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.homeLeft {
+    flex: 1 1 500px;
+}
+
+@media (max-width: 480px) {
+    .mainHeading h1 {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .badge {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+
+.homeLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 60px 40px;
+    flex: 1;
+    gap: 20px;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 2px solid #22c55e;
+    border-radius: 50px;
+    padding: 10px 20px;
+    width: fit-content;
+    color: #22c55e;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.badgeDot {
+    font-size: 20px;
+}
+
+.mainHeading {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.mainHeading h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1.1;
+    color: #000;
+}
+
+.highlightText {
+    color: #22c55e !important;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin: 10px 0;
+    max-width: 500px;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btnPrimary {
+    background-color: #22c55e;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btnPrimary:hover {
+    background-color: #16a34a;
+}
+
+.btnSecondary {
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btnSecondary:hover {
+    background-color: #e0e0e0;
+}
+
+.statsContainer {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.statItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.statIcon {
+    font-size: 24px;
+}
+
+.statText {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+.homeRight {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+    min-width: 300px;
+}
+
+/* HERO IMAGE AND PLAY BUTTON */
+
+.heroImage {
+    position: relative;
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    height: auto;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.heroImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #22c55e;
+    border: none;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 20px rgba(34, 197, 94, 0.4);
+}
+
+.playButton:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: 0 8px 25px rgba(34, 197, 94, 0.6);
+}
+
+
+
+
+/* TOP RIGHT BADGE  */
+
+.topRightBadge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px 10px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    flex-direction: row;
+}
+.badgeLabelBold{
+    font-size: 12px;
+    font-weight: 700;
+    color: #333;
+}
+.profilePics {
+    display: flex;
+    gap: -8px;
+}
+
+.pic {
+    display: inline-flex;
+    width: 32px;
+    height: 32px;
+    background-color: #ddd;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-right: -8px;
+    border: 2px solid white;
+}
+
+.badgeLabel {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 300;
+    color: #333;
+}
+
+
+/* BOTTOM LEFT BADGE  */
+
+.bottomLeftBadge {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.bottomLeftBadge div{
+    display: flex;
+    flex-direction: column;
+}
+
+.badgeIcon {
+    font-size: 24px;
+}
+
+.downButton {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.downButton:hover {
+    background-color: #333;
+}
+
+
+.homeRight {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homeRight img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}   
+
+
+/* VIDEO PLAYER */
+.videoPlayer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.videoPlayer iframe{
+    width: 80%;
+    height: 80%;
+}
+@media screen and (max-width: 768px) {
+    .videoPlayer iframe{
+        width: 50%;
+        height: 30%;
+    }
+}
+.closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+}
