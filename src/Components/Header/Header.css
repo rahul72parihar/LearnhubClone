@@ -34,3 +34,20 @@
   cursor: pointer;
   font-weight: bold;
 }
+
+@media (max-width: 768px) {
+  .header {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .headerCenter {
+    display: none;
+  }
+
+  .headerRightButton {
+    padding: 10px 14px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}

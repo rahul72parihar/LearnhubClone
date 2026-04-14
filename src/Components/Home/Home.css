@@ -315,6 +315,41 @@
     height: 80%;
 }
 @media screen and (max-width: 768px) {
+    .home {
+        margin-bottom: 6vh;
+    }
+
+    .homeLeft,
+    .homeRight {
+        padding: 32px 16px;
+    }
+
+    .homeRight {
+        min-width: 0;
+    }
+
+    .buttonGroup {
+        flex-direction: column;
+    }
+
+    .btnPrimary,
+    .btnSecondary {
+        width: 100%;
+    }
+
+    .topRightBadge {
+        top: 12px;
+        right: 12px;
+        max-width: calc(100% - 24px);
+    }
+
+    .bottomLeftBadge {
+        left: 12px;
+        bottom: 12px;
+        max-width: calc(100% - 24px);
+        padding-right: 10px;
+    }
+
     .videoPlayer iframe{
         width: 50%;
         height: 30%;
